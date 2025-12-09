@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Genesis Crystals Genshin Impact | GemZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="unvtopup.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">💎 GemZone</div>
+        <nav>
+            <a href="daftargame.html">Beranda</a> 
+            <a href="#">Promo</a>
+        </nav>
+    </header>
+
+    <main class="main-container-detail">
+        <div class="sidebar">
+            <img src="Ikon/genshin.jpg" alt="Genshin Impact Logo" class="game-logo">
+            <h2>Genshin Impact</h2> 
+            <p>Top-up Genesis Crystals termurah, proses order manual via WhatsApp dijamin cepat dan aman. Hanya memerlukan UID Anda.</p>
+            <p class="step-info" style="margin-top: 15px;">Anda bisa menemukan UID di sudut kanan bawah layar Game.</p>
+        </div>
+
+        <div class="content-form">
+            
+            <div class="card topup-form-step">
+                <h3>1. Masukkan UID (User ID)</h3>
+                <input type="text" id="game-id" placeholder="Masukkan UID Genshin Impact" required>
+                <p class="step-info">Server/Region (Asia, America, dll.) dapat diisi pada kolom Zone ID.</p>
+                <select id="payment-method" required>
+                    <option value="Asia">Asia</option>
+                    <option value="America">America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="TW, HK, MO">TW, HK, MO</option>
+                </select>
+            </div>
+        
+            <div class="card topup-form-step">
+                <h3>2. Pilih Nominal Genesis Crystals</h3>
+                <div class="diamond-options" id="diamond-options">
+                    <button class="diamond-btn" data-nominal="60 Crystals" data-harga="16000">60 Crystals (Rp 16.000)</button>
+                    <button class="diamond-btn best-value" data-nominal="300+30 Crystals" data-harga="79000">330 Crystals (Rp 79.000)</button>
+                    <button class="diamond-btn" data-nominal="980+110 Crystals" data-harga="239000">1090 Crystals (Rp 239.000)</button>
+                    <button class="diamond-btn" data-nominal="1980+260 Crystals" data-harga="479000">2240 Crystals (Rp 479.000)</button>
+                </div>
+            </div>
+        
+            <div class="card topup-form-step">
+                <h3>3. Konfirmasi & Order Manual</h3>
+                
+                <input type="tel" id="whatsapp-number" placeholder="Nomor WhatsApp Anda (Wajib)" required>
+                <p class="step-info">Pilih Metode Pembayaran.</p>
+                <select id="payment-method" required>
+                    <option value="QRIS">QRIS</option>
+                    <option value="BANK">Transfer BANK</option>
+                </select>
+                
+                <p id="ringkasan-order" class="result-text">Detail Order: Belum dipilih.</p>
+                <button class="checkout-button" id="whatsapp-order-btn">Kirim Order via WhatsApp</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 GemZone. Layanan Order Manual Cepat.</p>
+    </footer>
+
+    <script src="genshin.js"></script> 
+</body>
+</html>

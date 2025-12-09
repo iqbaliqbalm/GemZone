@@ -1,0 +1,161 @@
+:root {
+    --ungu-tua: #5D3FD3;
+    --ungu-muda: #9B5DE5;
+    --pink-terang: #F15BB5;
+    --background-dark: #1a1a2e;
+    --card-bg: rgba(40, 40, 70, 0.8);
+    --text-light: #f4f4f9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+/* --- Header & Footer (sama seperti beranda) --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: var(--ungu-tua);
+}
+.logo { font-size: 1.5em; font-weight: 800; color: var(--pink-terang); }
+nav a { color: var(--text-light); text-decoration: none; margin-left: 20px; }
+.footer { text-align: center; padding: 20px; background: var(--ungu-tua); margin-top: 50px; }
+
+/* --- Struktur Detail Game --- */
+.main-container-detail {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.game-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    color: var(--pink-terang);
+    margin-bottom: 10px;
+}
+
+.content-form {
+    flex-grow: 1;
+}
+
+/* --- Card & Form Styling --- */
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid var(--ungu-muda);
+}
+
+.card h3 {
+    color: var(--pink-terang);
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.step-info {
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+input[type="text"], input[type="tel"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--ungu-muda);
+    border-radius: 8px;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    appearance: none; 
+}
+
+/* --- Diamond Options --- */
+.diamond-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.diamond-btn {
+    background: var(--background-dark);
+    color: var(--text-light);
+    border: 2px solid var(--ungu-muda);
+    padding: 15px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    flex-basis: calc(33.333% - 7px);
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.diamond-btn:hover, .diamond-btn.active {
+    border-color: var(--pink-terang);
+    background: var(--ungu-tua);
+}
+
+.diamond-btn.best-value {
+    background: linear-gradient(to right, var(--ungu-muda), var(--pink-terang));
+    border: 2px solid var(--text-light);
+}
+
+.result-text {
+    margin-top: 10px;
+    color: var(--pink-terang);
+    padding: 10px;
+    border: 1px dashed var(--ungu-muda);
+    border-radius: 5px;
+}
+
+.checkout-button {
+    width: 100%;
+    background: linear-gradient(to right, var(--ungu-tua), var(--pink-terang));
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 768px) {
+    .main-container-detail {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .diamond-btn {
+        flex-basis: calc(50% - 5px); /* 2 tombol per baris di mobile */
+    }
+}

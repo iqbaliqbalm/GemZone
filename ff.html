@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Free Fire | GemZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="unvtopup.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">💎 GemZone</div>
+        <nav>
+            <a href="daftargame.html">Beranda</a> 
+            <a href="#">Promo</a>
+        </nav>
+    </header>
+
+    <main class="main-container-detail">
+        <div class="sidebar">
+            <img src="Ikon/ff.jpeg" alt="Free Fire Logo" class="game-logo">
+            <h2>Free Fire</h2> 
+            <p>Top-up Diamond Free Fire termurah, proses order manual via WhatsApp dijamin cepat dan aman. Kami hanya memerlukan ID Player Anda.</p>
+            <p class="step-info" style="margin-top: 15px;">Anda bisa menemukan ID Player (UID) di bagian atas layar utama Game.</p>
+        </div>
+
+        <div class="content-form">
+            
+            <div class="card topup-form-step">
+                <h3>1. Masukkan ID Player (UID)</h3>
+                <input type="text" id="game-id" placeholder="Masukkan ID Player Free Fire" required>
+                <input type="text" id="zone-id" placeholder="Server/Region (Opsional)" value="">
+                <p class="step-info">Top-up Free Fire hanya memerlukan ID Player Anda. Zone ID tidak wajib diisi.</p>
+            </div>
+        
+            <div class="card topup-form-step">
+                <h3>2. Pilih Nominal Diamond</h3>
+                <div class="diamond-options" id="diamond-options">
+                    <button class="diamond-btn" data-nominal="100 Diamonds" data-harga="16000">100 Diamonds (Rp 16.000)</button>
+                    <button class="diamond-btn best-value" data-nominal="300 Diamonds" data-harga="45000">300 Diamonds (Rp 45.000)</button>
+                    <button class="diamond-btn" data-nominal="520 Diamonds" data-harga="80000">520 Diamonds (Rp 80.000)</button>
+                    <button class="diamond-btn" data-nominal="1080 Diamonds" data-harga="155000">1080 Diamonds (Rp 155.000)</button>
+                </div>
+            </div>
+        
+            <div class="card topup-form-step">
+                <h3>3. Konfirmasi & Order Manual</h3>
+                
+                <input type="tel" id="whatsapp-number" placeholder="Nomor WhatsApp Anda (Wajib)" required>
+                <p class="step-info">Pilih Metode Pembayaran.</p>
+                <select id="payment-method" required>
+                    <option value="QRIS">QRIS</option>
+                    <option value="BANK">Transfer BANK</option>
+                </select>
+                
+                <p id="ringkasan-order" class="result-text">Detail Order: Belum dipilih.</p>
+                <button class="checkout-button" id="whatsapp-order-btn">Kirim Order via WhatsApp</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 GemZone. Layanan Order Manual Cepat.</p>
+    </footer>
+
+    <script src="ff.js"></script> 
+</body>
+</html>

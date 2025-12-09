@@ -1,0 +1,116 @@
+:root {
+    --ungu-tua: #5D3FD3;
+    --pink-terang: #F15BB5;
+    --background-dark: #1a1a2e; /* Ungu gelap mirip background Codashop */
+    --text-light: #f4f4f9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: var(--ungu-tua); /* Warna ungu di header */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--pink-terang);
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* --- Main Content --- */
+.main-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    background-color: var(--ungu-tua);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    /* Tambahkan gradasi di banner jika mau: */
+    /* background: linear-gradient(90deg, #5D3FD3, #9B5DE5); */
+}
+
+.game-category {
+    margin-bottom: 50px;
+}
+
+.game-category h3 {
+    color: var(--pink-terang);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--ungu-tua);
+    padding-bottom: 5px;
+}
+
+.game-grid {
+    display: grid;
+    /* 6 kolom per baris untuk desktop */
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+    gap: 20px;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+    background-color: #2b2b4d; /* Kotak item game */
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(241, 91, 181, 0.3); /* Shadow pink */
+    border-color: var(--pink-terang);
+}
+
+.game-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.game-item p {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--ungu-tua);
+    margin-top: auto; /* Mendorong footer ke bawah */
+}

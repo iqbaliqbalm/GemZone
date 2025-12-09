@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Mobile Legends | GemZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel-stylesheet">
+    <link rel="stylesheet" href="unvtopup.css"> </head>
+<body>
+
+    <header class="header">
+        <div class="logo">💎 GemZone</div>
+        <nav>
+            <a href="daftargame.html">Beranda</a> <a href="#">Promo</a>
+        </nav>
+    </header>
+
+    <main class="main-container-detail">
+        <div class="sidebar">
+            <img src="Ikon/mlbb.jpeg" alt="Mobile Legends Logo" class="game-logo">
+            <h2>Mobile Legends: Bang Bang</h2>
+            <p>Top-up Diamond MLBB termurah, proses order manual via WhatsApp dijamin cepat dan aman.</p>
+            </div>
+
+        <div class="content-form">
+            
+            <div class="card topup-form-step">
+                <h3>1. Masukkan User ID</h3>
+                <input type="text" id="game-id" placeholder="Masukkan User ID" required>
+                <input type="text" id="zone-id" placeholder="Zone ID (Di dalam kurung)" required>
+                <p class="step-info">Anda bisa menemukan User ID dan Zone ID di menu profil game Anda.</p>
+            </div>
+        
+            <div class="card topup-form-step">
+                <h3>2. Pilih Nominal Top Up</h3>
+                <div class="diamond-options" id="diamond-options">
+                    <button class="diamond-btn" data-nominal="50 Diamond" data-harga="15000">50 Diamond (Rp 15.000)</button>
+                    <button class="diamond-btn best-value" data-nominal="250 Diamond" data-harga="70000">250 Diamond (Rp 70.000)</button>
+                    <button class="diamond-btn" data-nominal="500 Diamond" data-harga="135000">500 Diamond (Rp 135.000)</button>
+                    </div>
+            </div>
+        
+            <div class="card topup-form-step">
+                <h3>3. Konfirmasi & Order Manual</h3>
+                
+                <input type="tel" id="whatsapp-number" placeholder="Nomor WhatsApp Anda (Wajib)" required>
+                <p class="step-info">Pilih Metode Pembayaran.</p>
+                <select id="payment-method" required>
+                    <option value="QRIS">QRIS</option>
+                    <option value="BANK">Transfer BANK</option>
+                </select>
+                
+                <p id="ringkasan-order" class="result-text">Detail Order: Belum dipilih.</p>
+                <button class="checkout-button" id="whatsapp-order-btn">Kirim Order via WhatsApp</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 GemZone. Layanan Order Manual Cepat.</p>
+    </footer>
+
+    <script src="mlbb.js"></script> </body>
+</html>
